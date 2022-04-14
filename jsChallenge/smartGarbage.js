@@ -29,11 +29,7 @@ Output:
 */
 
 const smartGarbage = (trash, bins)=>{
-  for (let bin in bins) {
-    if (bin === trash) {
-      bins[bin]++;
-    }
-  }
+  bins[trash]++;
   return bins;
 
 };
